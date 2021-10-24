@@ -4,7 +4,7 @@ name: Push-Actions
 on: 
   pull_request:
     paths:
-      show-notification.ps1
+      ./show-notification.ps1
         
 =======
 on: [pull_request]
