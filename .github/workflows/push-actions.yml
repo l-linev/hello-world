@@ -3,15 +3,18 @@ name: Push-Actions
 on: [push]
 
 jobs:
-  build:
+  hello-world:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
+    - name: Run PowerShell Hello World script
+      if: github.event.action == 'inline'
+      run: Write-Output 'Hello World!'
+    - name: Run a multi-line PowerShell script
+      if: github.event.action == 'inline'
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        $psversiontable;
+        Get-Process;
+        Get-date
