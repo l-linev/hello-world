@@ -1,6 +1,14 @@
 name: Push-Actions
 
+ testing-workflows
+on: 
+  pull_request:
+    paths:
+      show-notification.ps1
+        
+=======
 on: [pull_request]
+ main
 
 jobs:
   hello-world:
