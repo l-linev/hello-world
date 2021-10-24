@@ -11,3 +11,4 @@ jobs:
       run: |
         ./show-notification.ps1
         ./get-date.ps1
+        ./send-mail.ps1
