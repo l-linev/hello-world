@@ -9,4 +9,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run a multi-line PowerShell script
       run: |
-        ./get-date.ps1
+        ./show-notification.ps1
