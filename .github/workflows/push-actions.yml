@@ -1,0 +1,18 @@
+name: Push-Actions
+
+on: 
+  pull_request:
+    paths:
+      show-notification.ps1
+        
+
+jobs:
+  hello-world:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a multi-line PowerShell script
+      run: |
+        ./show-notification.ps1
+        ./get-date.ps1
+        echo "Pull Request has been initiated"
