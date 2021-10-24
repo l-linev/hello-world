@@ -1,1 +1,2 @@
-return (Get-Date  -Format dd/mm.yy)
+Write-Host Getting curernt date...
+Get-Date  -Format dd--mm--yy
