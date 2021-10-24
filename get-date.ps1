@@ -1,1 +1,1 @@
-return (Get-Date)
+return (Get-Date  -Format dd/mm.yy)
