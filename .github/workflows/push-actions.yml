@@ -6,6 +6,7 @@ jobs:
   hello-world:
     runs-on: windows-latest
     steps:
+    - uses: actions/checkout@v2
     - name: Run a multi-line PowerShell script
       run: |
         ./get-date.ps1
