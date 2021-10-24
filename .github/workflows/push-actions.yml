@@ -4,10 +4,6 @@ on:
     paths:
       - '**.ps1'
         
-=======
-on: [pull_request]
- main
-
 jobs:
   hello-world:
     runs-on: windows-latest
