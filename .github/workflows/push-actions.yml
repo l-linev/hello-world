@@ -6,6 +6,7 @@ jobs:
   hello-world:
 
     runs-on: windows-latest
+    - uses: actions/checkout@v2
 
     steps:
     - name: Run a multi-line PowerShell script
