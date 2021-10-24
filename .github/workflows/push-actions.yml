@@ -13,6 +13,5 @@ jobs:
       run: Write-Output 'Hello World!'
     - name: Run a multi-line PowerShell script
       run: |
-        $psversiontable;
-        Get-Process;
-        Get-date
+        Write-Host Sending email...
+        Send-MailMessage -To lubomir_linev@yahoo.com -From linev@gsdfdshfgdshj.com -Subject "test1" -SmtpServer mta5.am0.yahoodns.net -Port 25  
