@@ -1,0 +1,9 @@
+name: push-actions
+on: push
+jobs:
+  Get-Current-Date:
+    runs-on: windows-latest
+    steps:
+    - run: |
+      ./get-date.ps1
+      
