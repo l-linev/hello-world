@@ -1,1 +1,1 @@
-Write-Host The workflow has been run!
+Write-Host The workflow has been activated!
