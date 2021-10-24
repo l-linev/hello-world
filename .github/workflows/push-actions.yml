@@ -6,6 +6,8 @@ jobs:
   hello-world:
     runs-on: windows-latest
     - uses: actions/checkout@v2
+    - name: Run PowerShell Hello World script
+      run: Write-Output 'Hello World!'
     steps:
     - name: Run a multi-line PowerShell script
       run: |
