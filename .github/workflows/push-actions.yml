@@ -14,4 +14,4 @@ jobs:
     - name: Run a multi-line PowerShell script
       run: |
         Write-Host Sending email...
-        Send-MailMessage -To lubomir_linev@yahoo.com -From linev@gsdfdshfgdshj.com -Subject "test1" -SmtpServer mta5.am0.yahoodns.net -Port 25  
+        get-date 
